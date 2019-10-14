@@ -1,0 +1,43 @@
+{
+  "name": "abides",
+  "version": "0.4.0",
+  "description": "js object validation",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "fix": "eslint --fix src '**/*.js'",
+    "esw": "esw --watch --color '**/*.js'",
+    "test": "nyc ava",
+    "test:watch": "ava --watch"
+  },
+  "repository": "git@github.com:gtarsia/abides.git",
+  "author": "gtarsia <guidotarsia@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "codecov": "^3.4.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-ava": "^6.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsdoc": "^4.8.3",
+    "eslint-watch": "^5.0.1",
+    "nyc": "^14.1.1"
+  },
+  "ava": {
+    "require": [
+      "esm"
+    ]
+  },
+  "dependencies": {
+    "adblock-rs": "^0.1.32",
+    "ava": "^2.3.0",
+    "esm": "^3.2.22",
+    "fromentries": "^1.1.0",
+    "lodash": "^4.17.11",
+    "mongodb": "^3.3.2",
+    "node-fetch": "^2.6.0",
+    "puppeteer": "^1.20.0",
+    "query-string": "^6.8.3"
+  }
+}
